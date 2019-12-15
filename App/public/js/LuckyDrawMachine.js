@@ -52,20 +52,23 @@
                 updateSettings = handler;
             },
             addCandidate: function (v) {
-                $.post('/addCandidate', {'candidate': v});
+                $.post('/api/addCandidate', {'candidate': v});
+            },
+            addCandidates: function (v) {
+                $.post('/api/addCandidates', {'candidates': v});
             },
             removeCandidate: function (v) {
-                $.post('/removeCandidate', {'candidate': v});
+                $.post('/api/removeCandidate', {'candidate': v});
             },
             clearCandidates: function () {
-                $.post('/clearCandidates');
+                $.post('/api/clearCandidates');
             },
             rand: function () {
-                $.get('/rand');
+                $.get('/api/rand');
             },
             setSettings: (settings) => {
 
-                fetch('/settings', {
+                fetch('/api/settings', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

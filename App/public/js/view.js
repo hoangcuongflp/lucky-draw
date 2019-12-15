@@ -99,11 +99,8 @@
         });
 
         function go() {
-            if ($('.item-list li').length > 0) {
-
+            if ($('.item-list tbody tr').length > 0) {
                 machine.rand();
-            } else {
-                showEditListView();
             }
         }
 

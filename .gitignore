@@ -136,6 +136,8 @@ typings/
 # Serverless directories
 .serverless
 
+.history
+
 lucky-draw.iml
 
 App/public/css/style.css

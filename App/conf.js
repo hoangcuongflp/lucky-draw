@@ -1,3 +1,4 @@
 module.exports = {
-    preloadCandidates: []
+    preloadCandidates: [],
+    adminPassword: 'Hms@123',
 };
